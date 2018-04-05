@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="homepage.css">
+  <title>CourseWale</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body>
+
+<header>
+<img id="head1"  src="ft.jpg" width="50" height="90">
+<h2 id="head">Courses</h2>
+<h2 id="head">Free videos</h2>
+
+<div class="sidenav">
+  <button class="dropdown-btn" href="#ma">   MY ACCOUNT<span style="margin-left:70px">&#9660;</span>
+     <i class="fa fa-caret-down"></i>
+  </button>
+ <div class="dropdown-container">
+    <a href="#1" >LOGIN</a>
+    <a href="signup.html">SIGN UP</a>
+   
+ </div>
+
+</div>
+
+  </header>
+
+ <div class="one">
+  <img src="123.jpg"  style="width:100%;">
+</div> 
+
+<h3 id="sa">Welcome to CourseWale.</h3>
+<h2 id="ty">Take your classroom, wherever you go...</h2>
+
+<div class="slideshow" style="max-width:650px">
+  <img class="mySlides" src="1.png" width="650" height="150">
+  <img class="mySlides" src="2.png" width="650" height="150">
+  <img class="mySlides" src="3.jpg" width="650" height="150">
+  <img class="mySlides" src="4.jpg" width="650" height="150">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+<div id="noti">
+<h4>If you don't want to miss any video, Subscribe to get notification</h4>
+<button class="button">Subscribe</button>
+</div>
+<div class="di1">
+<h3>Machine Learning</h3>
+<p>Watch Videos on various topics and get to know about Machine Learning's algorithms</p>
+</div>
+
+<div class="di2">
+<h3>Deep Learning</h3>
+<p>Watch Videos on various topics and get to know about Deep Learning's algorithms</p>
+</div>
+
+<div class="di2">
+<h3>Natural Language Processing</h3>
+<p>Watch Videos on various topics and get to know about NLP's algorithms.</p>
+</div>
+
+<div class="di4">
+<h3>Artificial Intelligence</h3>
+<p>Watch Videos on various topics and get to know about AI's algorithms</p>
+</div>
+
+<h2 id="exam">Know your exams</h2>
+
+<div class="di01">
+<h4>course</h4>
+ <a href="ml.html">ML</a> 
+<p>Machine Learning </br> (ML)</p>
+</div>
+
+<div class="di02">
+<h4>course</h4>
+<a href="dl.html">DL</a> 
+<p>Deep Learning</br>(DL)</p>
+</div>
+
+<div class="di02">
+<h4>course</h4>
+<a href="nlp.html">NLP</a> 
+<p>Natural Language Processing</br>(NLP)</p>
+</div>
+
+<div class="di04">
+<h4>course</h4>
+<a href="ai.html">AI</a> 
+<p>Artificial Intelligence</br>(AI)</p>
+</div>
+<div id="noti">
+<button class="button" id="ab">view all courses</button>
+</div>
+<div id="noti">
+<h3 style="color:red">About us</h3>
+<h1 style="text-decoration: underline overline;">We are E-Learning Platform</h1>
+<p style="color:green">CourseWale is a E-Learning platform specialized in providing a course for the different Data Science subject. CourseWale was the first to introduce the concept of offline coaching through its Pendrive courses which was very innovative step towards the E-learning education and now it has become very popular and huge in demand among the students interested in Data Scientist as a carrier. More than 2 lakh students have been associated with a different course of CourseWale and have been successfully placed in the different companies as a Data Scientist.</p>
+</div>
+<div id="noti">
+<h2 style="color:red">WHY US?</h2>
+<h1 style="text-decoration: underline overline;">Exchanging Notes no more a Hassle</h1>
+<p style="color:blue">CourseWale is a E-Learning platform specialized in providing a course for the different Data Science subject. CourseWale was the first to introduce the concept of offline coaching through its Pendrive courses which was very innovative step towards the E-learning education and now it has become very popular and huge in demand among the students interested in Data Scientist as a carrier. More than 2 lakh students have been associated with a different course of CourseWale and have been successfully placed in the different companies as a Data Scientist.</p>
+</div>
+<div>
+<ul>
+<li>Tough </br> made easy</li>
+<li>Switch </br> to smart</li>
+<li>Revolutionary</br>learning Initiative</li>
+<li>Learn at</br>Your Own Pace</li>
+<li>To Forge a Better</br>Understanding</li>
+</ul>
+</div>
+
+ <footer>
+<img id="foot"  src="ft.jpg" width="200" height="200">
+
+  <h2 id="foot">Contact info:</br>New Delhi India </br>+91 9876543210</br>abc.123@sbacademy.com</h2>
+ 
+</footer> 
+</body>
+<script>
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+</script>
+
+
+
+</html> 
